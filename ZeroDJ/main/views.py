@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("<h1>Мой проект Джанго</h1>")
+    return render(request,'main/index.html')
 
 def new(request):
-    return HttpResponse("<h1>Вторая страница моего проекта Джанго</h1>")
+    return render(request,'main/new.html')
